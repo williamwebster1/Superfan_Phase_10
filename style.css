@@ -1,0 +1,136 @@
+body{
+	height:100%;
+	width:100%;
+	display:block;
+	margin:0;
+}
+
+ul li{
+ font-size:30px;
+ margin:0;
+ padding:0;
+}
+.titlerow{
+	height:25%;
+	width:100%;
+	font-size: 39px;
+	text-align:center;
+	display:inline-block;
+	border: solid;
+	border-width:1px;
+}
+
+.content{
+	height:75%;
+	width:100%;
+	display:flex;
+}
+
+.imgblock{
+	height:100%;
+	width:60%;
+	display:flex;
+	border: solid;
+	border-width:1px;
+}
+
+.disccolumn{
+	height:100%;
+	width:40%;
+	display:block;
+}
+
+.discbox{
+	height:50%;
+	width:100%;
+	border: solid;
+	border-width:1px;
+
+}
+
+.img{
+	height:100%;
+	width:100%;
+	cursor: pointer;
+}
+
+.black{
+	background-color:black;
+}
+.red{
+	background-color:red;
+}
+.green{
+	background-color:green;
+}
+.gray{
+	background-color:gray;
+}
+.yellow{
+	background-color:yellow;
+}
+.lightblue{
+	background-color:lightblue;
+}
+.blue{
+	background-color:blue;
+}
+.zoom {
+
+  transition: transform .2s; /* Animation */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.006); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@media screen and (max-width: 700px) {
+	.titlerow{
+		font-size: 35;
+	}
+	.content{
+		display:block;
+	}
+	.disccolumn{
+		display:flex;
+		height:30%;
+		width:100%;
+	}
+	.imgblock{
+		height:70%;
+		width:100%;
+	}
+	.discbox{
+		height:100%;
+		width:50%;
+	}
+	ul li{
+	font-size:15px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.titlerow{
+		font-size:27;
+	}
+	.content{
+		display:block;
+	}
+	.disccolumn{
+		display:flex;
+		height:40%;
+		width:100%;
+	}
+	.imgblock{
+		height:60%;
+		width:100%;
+	}
+	.discbox{
+		height:100%;
+		width:50%;
+	}
+	ul li{
+	font-size:15px;
+	}
+}
